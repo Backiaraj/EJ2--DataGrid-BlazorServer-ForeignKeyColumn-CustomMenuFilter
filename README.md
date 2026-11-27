@@ -1,53 +1,55 @@
-# Blazor DataGrid with Foreign Key Column and Custom Menu Filter
-
-A sample Blazor Server application demonstrating how to use a custom dropdown component in the menu filter of a Foreign Key column in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) component.
+# Blazor Server DataGrid Foreign Key Column Custom Menu Filter
 
 ## Overview
 
-This project showcases best practices for rendering custom filter templates in Foreign Key columns. It demonstrates how to integrate a `SfDropDownList` component as a custom filter interface within the DataGrid's menu filter, providing a seamless user experience for filtering related data.
+This sample demonstrates how to customize filtering behavior for a foreign key column in a Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) by rendering a custom ComboBox component inside the Grid's menu filter interface. Rather than using the default filter UI, the sample provides a tailored filtering experience that allows users to select values from a predefined list associated with the foreign key data source. This approach is useful when foreign key values should be presented through a controlled selection experience instead of a standard filter input.
 
 ## Key Features
 
-- **Foreign Key Column Support**: Link related data from employee records to orders
-- **Custom Filter Templates**: Render dropdown components directly in the filter menu
-- **Interactive DataGrid**: Sort, page, and filter order data with employee information
-- **Responsive Design**: Bootstrap-based responsive layout
+- Demonstrates a Syncfusion Blazor DataGrid foreign key column filtering scenario.
+- Renders a custom ComboBox component inside the Grid menu filter UI.
+- Uses a foreign key data source to present selectable filter values.
+- Replaces the default menu filter experience with a customized component-based filter.
+- Shows how Grid filtering can be integrated with a user-defined selection control.
+- Includes supporting data models and sample data used by the foreign key column implementation.
 
 ## Prerequisites
 
-- [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
-- [Visual Studio Code](https://code.visualstudio.com/)
+* Visual Studio 2022 or  Visual Studio Code
 
-## Getting Started
+## How to Run the Project
 
-### Clone the repository
+**Visual Studio 2022**
 
-```bash
-git clone https://github.com/SyncfusionExamples/EJ2--DataGrid-BlazorServer-ForeignKeyColumn-CustomMenuFilter.git
-cd ForeignKeyWithCustomMenuFilter
-```
+1. Clone or download the repository.
+2. Open the verified solution file: `ForeignKeyWithCustomMenuFilter.sln`.
+3. Restore NuGet packages.
+4. Build the solution.
+5. Run the application using `Ctrl+F5`.
+6. Access the application at the local URL displayed by the launch output.
+   
+**Visual Studio Code**
 
-### Run with Visual Studio
-
-1. Open the solution file using Visual Studio 2022 or later.
-2. Restore the NuGet packages by rebuilding the solution.
-3. Build the project to ensure there are no compilation errors.
-4. Run the project.
-
-### Run with .NET CLI
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the project directory.
 
 ```bash
-# Restore dependencies
 dotnet restore
-
-# Run the project
 dotnet run
 ```
 
+## Project Structure
 
-## References
+- `Pages/` — contains the Razor page that renders the Syncfusion DataGrid and custom foreign key menu filter implementation.
+- `Data/` — contains the sample data models and foreign key data source used by the Grid.
 
-**Documentation**: https://blazor.syncfusion.com/documentation/datagrid/foreignkey-column
+## Support and Feedback
 
-**Online example**: https://blazor.syncfusion.com/demos/datagrid/foreign-key-column?theme=bootstrap5
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- For official documentation related to DataGrid foreign key columns, see: https://help.syncfusion.com/grid-sdk/blazor/data-grid/foreignkey-column
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
