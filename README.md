@@ -4,7 +4,7 @@
 
 This sample demonstrates how to customize filtering behavior for a foreign key column in a Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) by rendering a custom ComboBox component inside the Grid's menu filter interface. Rather than using the default filter UI, the sample provides a tailored filtering experience that allows users to select values from a predefined list associated with the foreign key data source. This approach is useful when foreign key values should be presented through a controlled selection experience instead of a standard filter input.
 
-## Key Features
+## Features
 
 - Demonstrates a Syncfusion Blazor DataGrid foreign key column filtering scenario.
 - Renders a custom ComboBox component inside the Grid menu filter UI.
