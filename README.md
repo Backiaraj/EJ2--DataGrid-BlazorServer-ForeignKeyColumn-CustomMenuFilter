@@ -15,36 +15,38 @@ This sample demonstrates how to customize filtering behavior for a foreign key c
 
 ## Prerequisites
 
-* Visual Studio 2022 or  Visual Studio Code
+* [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
+* [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/)
 
-## How to Run the Project
+## How to run the project
 
-**Visual Studio 2022**
+**Visual Studio 2026**:
 
-1. Clone or download the repository.
-2. Open the verified solution file: `ForeignKeyWithCustomMenuFilter.sln`.
-3. Restore NuGet packages.
-4. Build the solution.
-5. Run the application using `Ctrl+F5`.
-6. Access the application at the local URL displayed by the launch output.
-   
-**Visual Studio Code**
+* Checkout this project to a location in your disk.
+* Open the project (`ForeignKeyWithCustomMenuFilter.csproj`) file.
+* Restore the NuGet packages.
+* Run the project.
 
-1. Open the repository folder in Visual Studio Code.
-2. Open the integrated terminal.
-3. Navigate to the project directory.
+**Visual Studio Code**:
+
+* Checkout this project to a location in your disk.
+* Open the repository folder in Visual Studio Code.
+* Open the integrated terminal.
+* Navigate to the repository root.
 
 ```bash
+cd EJ2--DataGrid-BlazorServer-ForeignKeyColumn-CustomMenuFilter
 dotnet restore
 dotnet run
 ```
 
-## Project Structure
+Open the URL displayed in the terminal after the application starts.
+
+## Project structure
 
 - `Pages/` — contains the Razor page that renders the Syncfusion DataGrid and custom foreign key menu filter implementation.
-- `Data/` — contains the sample data models and foreign key data source used by the Grid.
 
-## Support and Feedback
+## Support and feedback
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
 - To report an issue specific to this sample, open a GitHub issue in this repository.
